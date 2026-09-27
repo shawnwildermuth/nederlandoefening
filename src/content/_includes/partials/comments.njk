@@ -1,24 +1,42 @@
 {% if site.graphCommentId %}
-<section class="mt-10 border-t border-amber-500/30 pt-8">
-  <div id="graphcomment"></div>
-  <script type="text/javascript">
-    (function () {
-      var gc_params = {
+  <style>
+    #graphcomment {
+      min-height: 341px;
+    }
+    @media (min-width: 501px) {
+      #graphcomment {
+        min-height: 304px;
+      }
+    }
+    @media (min-width: 600px) {
+      #graphcomment {
+        min-height: 286px;
+      }
+    }
+  </style>
+  <section class="mt-10 border-t border-amber-500/30 pt-8">
+    <div class="text-sm my-1">Feel free to comment if you can improve my Dutch!</div>
+
+    <div id="graphcomment"></div>
+    <script type="text/javascript">
+      var __semio__params = {
         graphcommentId: "{{ site.graphCommentId }}",
-        behaviour: {
-          defaultSorting: "newest",
-        },
-      };
-      (function (d, s, id) {
-        var js,
-          gjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://graphcomment.com/js/integration.js?" + Date.now();
-        gjs.parentNode.insertBefore(js, gjs);
-      })(document, "script", "graphcomment-jssdk");
-    })();
-  </script>
-</section>
+        behaviour: {}
+      }
+
+      /* - - - DON'T EDIT BELOW THIS LINE - - - */
+
+      function __semio__onload() {
+        __semio__gc_graphlogin(__semio__params)
+      }(function () {
+        var gc = document.createElement('script');
+        gc.type = 'text/javascript';
+        gc.async = true;
+        gc.onload = __semio__onload;
+        gc.defer = true;
+        gc.src = 'https://integration.graphcomment.com/gc_graphlogin.js?' + Date.now();
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(gc);
+      })();
+    </script>
+  </section>
 {% endif %}

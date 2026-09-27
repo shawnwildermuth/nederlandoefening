@@ -5,7 +5,7 @@ module.exports = {
   author: "Shawn Wildermuth",
   mainSiteUrl: "https://nederlandoefening.nl",
   aboutUrl: "https://wildermuth.com/en/about",
-  // GraphComment (https://www.graphcomment.com/en) site ID — create a site at
+  // graphComment: (https://www.graphcomment.com/en) site ID — create a site at
   // graphcomment.com and paste its ID here to enable comments on posts.
-  graphCommentId: "",
+  graphCommentId: "Nederland-Oefening",
 };
