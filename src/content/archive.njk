@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+title: Archive
+permalink: /archive/
+description: All the stories, in one place.
+---
+<h1 class="text-3xl font-headings font-bold text-amber-600 dark:text-amber-500 mb-8">All stories</h1>
+<div class="grid gap-6 sm:grid-cols-2">
+  {% for post in collections.posts %}
+    {% include "partials/postCard.njk" %}
+  {% endfor %}
+</div>

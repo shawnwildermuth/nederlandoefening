@@ -1,0 +1,38 @@
+<header class="bg-white/90 dark:bg-gray-900/90 border-b border-amber-500/20 sticky top-0 z-10 backdrop-blur">
+  <div class="max-w-5xl mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
+    <a href="/" class="flex items-center gap-2 text-xl font-headings font-bold text-amber-600 dark:text-amber-500">
+      <span aria-hidden="true">🌷</span>
+      Going Dutch
+    </a>
+    <div class="flex items-center gap-4">
+      <nav aria-label="Main navigation">
+        <ul class="flex gap-6 text-sm font-medium">
+          <li>
+            <a class="hover:text-amber-600 dark:hover:text-amber-400 {% if page.url == '/' %}text-amber-600 dark:text-amber-500{% else %}text-gray-600 dark:text-gray-200{% endif %}" href="/">Home</a>
+          </li>
+          <li>
+            <a class="hover:text-amber-600 dark:hover:text-amber-400 {% if page.url == '/archive/' %}text-amber-600 dark:text-amber-500{% else %}text-gray-600 dark:text-gray-200{% endif %}" href="/archive/">Archive</a>
+          </li>
+          <li>
+            <a class="hover:text-amber-600 dark:hover:text-amber-400 text-gray-600 dark:text-gray-200" href="{{ site.aboutUrl }}" target="_blank" rel="noopener">About</a>
+          </li>
+        </ul>
+      </nav>
+      <button
+        id="theme-toggle"
+        type="button"
+        aria-label="Toggle light and dark theme"
+        class="rounded-full p-2 text-gray-600 hover:text-amber-600 dark:text-gray-200 dark:hover:text-amber-400 transition"
+      >
+        <span class="dark:hidden" aria-hidden="true">🌙</span>
+        <span class="hidden dark:inline" aria-hidden="true">☀️</span>
+      </button>
+    </div>
+  </div>
+</header>
+<script>
+  document.getElementById("theme-toggle").addEventListener("click", function () {
+    var isDark = document.documentElement.classList.toggle("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+  });
+</script>

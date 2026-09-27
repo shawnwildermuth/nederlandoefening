@@ -1,0 +1,20 @@
+---
+layout: layouts/base.njk
+title: Home
+description: A daily short story in Dutch, written for practice.
+---
+<section class="mb-12 text-center">
+  <h1 class="text-4xl sm:text-5xl font-headings font-bold text-amber-600 dark:text-amber-500 mb-4">Going Dutch</h1>
+  <p class="text-lg text-gray-700 dark:text-gray-200 max-w-2xl mx-auto">
+    Prose in Dutch, every day &mdash; my own practice blog for learning Dutch.
+  </p>
+</section>
+
+<section>
+  <h2 class="text-2xl font-headings font-bold mb-6 border-b border-amber-500/30 pb-2">Recent stories</h2>
+  <div class="grid gap-6 sm:grid-cols-2">
+    {% for post in collections.posts %}
+      {% include "partials/postCard.njk" %}
+    {% endfor %}
+  </div>
+</section>
