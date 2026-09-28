@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("content/css");
   eleventyConfig.addPassthroughCopy("content/images");
+  eleventyConfig.addPassthroughCopy("content/robots.txt");
 
   eleventyConfig.addFilter("postDate", (dateObj) =>
     new Intl.DateTimeFormat("nl-NL", {
