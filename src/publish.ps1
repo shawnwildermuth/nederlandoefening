@@ -4,4 +4,5 @@ npm run build
 docker build -t goingdutch:latest .
 docker tag goingdutch:latest shawnwildermuth/goingdutch:latest
 docker push shawnwildermuth/goingdutch:latest
+Write-Output "Restarting App"
 az webapp restart --name goingdutch --resource-group Applications

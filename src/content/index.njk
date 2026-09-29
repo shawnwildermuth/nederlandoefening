@@ -14,6 +14,7 @@ description: A daily short story in Dutch, written for practice.
   <h2 class="text-2xl font-headings font-bold mb-6 border-b border-amber-500/30 pb-2">Recent stories</h2>
   <div class="grid gap-6 sm:grid-cols-2">
     {% for post in collections.posts %}
+      {% set featured = loop.first %}
       {% include "partials/postCard.njk" %}
     {% endfor %}
   </div>
