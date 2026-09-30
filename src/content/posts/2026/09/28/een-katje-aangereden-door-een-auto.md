@@ -1,5 +1,5 @@
 ---
-title: "Nieuws in Den Haag: Een Katja Aangereden Door Een Auto"
+title: "Nieuws in Den Haag: een katja aangereden door een auto"
 date: 2026-09-28
 excerpt: "In het AD.nl vandaag, het hoofdnieuws was over een jong katje dat was aangereden door een auto."
 image: /images/posts/2026/09/28/cover.jpg

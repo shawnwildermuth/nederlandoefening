@@ -1,5 +1,5 @@
 ---
-title: "Het Einde van Mijn Tijd in het Ziekenhuis"
+title: "Het einde van mijn tijd in het ziekenhuis"
 date: 2026-09-29
 excerpt: "Voor de geladen drie weeken, ik had nierstenen. Het betrokken zies reis to het hopitaal voor werkzaamheden, tests en procedures. Ik had pijn voor het grootste deel van die tijd."
 image: /images/posts/2026/09/29/cover.jpg

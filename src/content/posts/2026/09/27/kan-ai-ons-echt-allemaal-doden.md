@@ -1,5 +1,5 @@
 ---
-title: "Kan AI Ons Echt Allemaal Doden?"
+title: "Kan AI ons echt allemaal doden?"
 date: 2026-09-27
 excerpt: "Met veel data, AI kan veel vragen beantwoorden. Maar AI is als goed als de data."
 image: /images/posts/2026/09/27/cover.jpg
