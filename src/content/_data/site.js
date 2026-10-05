@@ -1,7 +1,7 @@
 module.exports = {
-  title: "Going Dutch",
-  tagline: "A short story in Dutch, every day",
-  description: "A daily practice blog — one short story in Dutch, every day, to help learn the language.",
+  title: "Going Dutch (Nederlands gaan)",
+  tagline: "Elke dag een kleine blog in het Nederlands.",
+  description: "Mijn oefening van de Nederlandse les vandaag: Elke dag een kleine blog in het Nederlands.",
   author: "Shawn Wildermuth",
   mainSiteUrl: "https://nederlandoefening.nl",
   aboutUrl: "https://wildermuth.com/en/about",

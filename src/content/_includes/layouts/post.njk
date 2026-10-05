@@ -7,16 +7,15 @@ layout: layouts/base.njk
   </p>
   <header class="mb-8 border-b border-amber-500/30 pb-6">
     {% if image %}
-      <img src="{{ image }}" alt="{{ imageAlt or title }}" class="mb-6 w-full max-h-96 rounded-lg object-cover">
+      <img src="{{ image }}" alt="{{ imageAlt or title }}" class="mb-6 w-full aspect-video rounded-lg object-cover">
     {% endif %}
     <time datetime="{{ date | isoDate }}" class="text-xs uppercase tracking-wide text-amber-600 dark:text-amber-500">
       {{ date | postDate }}
     </time>
     <h1 class="mt-2 text-3xl sm:text-4xl font-headings font-bold text-gray-900 dark:text-gray-100">{{ title }}</h1>
   </header>
-  <div lang="nl" class="prose prose-lg dark:prose-invert max-w-none">
+  <div lang="nl" class="prose prose-lg dark:prose-invert max-w-none mb-4">
     {{ content | safe }}
   </div>
-  <hr/>
   {% include "partials/comments.njk" %}
 </article>
