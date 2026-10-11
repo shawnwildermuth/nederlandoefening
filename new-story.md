@@ -1,0 +1,1 @@
+--- title: "" date: 2026-10-11 excerpt: "" image: /images/posts/2026/10/11/cover.jpg --- <!-- cSpell:locale nl -->
